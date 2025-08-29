@@ -61,8 +61,6 @@ p {
     border-radius: 8px;
 }
 
-
-/* ChaptGPT helped write this code */
 #response {
     background-color: #1a1a1a;
     color: white;
@@ -83,7 +81,6 @@ p {
     border-radius: 5px;
 }
 
-/*ChaptGPT helped with .input styles*/
 .input {
     background-color: #222;
     padding: 15px;
@@ -131,7 +128,6 @@ p {
     background-color: lightgrey;
 }
 
-/* Chat GPT helped with this section */
 .chat-container {
     display: flex;
     flex-direction: column;
@@ -196,7 +192,6 @@ p {
     scrollbar-width: none;
 }
 
-/* ChatGPT helped with this section */
 @media (max-width: 768px) {
     .input {
         flex-direction: column; /* Stack elements vertically on small screens */
