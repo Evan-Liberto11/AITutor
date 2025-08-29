@@ -1,9 +1,0 @@
-#Protect Directory
-# password protect excluding specific ip
- AuthName "Username and password required"
- AuthUserFile /var/www/password/.htpasswd
- AuthType Basic
- Require valid-user
- Order Deny,Allow
- Deny from all
- Satisfy Any
