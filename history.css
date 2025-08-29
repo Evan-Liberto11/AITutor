@@ -104,7 +104,6 @@ h3 {
     line-height: 1.6;
 }
 
-/*ChatGPT hlelped with this*/
 #history {
     background: linear-gradient(145deg, #10204b, #17356b);
     border-radius: 12px;
@@ -119,7 +118,6 @@ h3 {
     color: white;
 }
 
-/*-ChatGpt Helped with this*/
 #history-output {
     background-color: rgb(255, 255, 255);
     border-radius: 12px;

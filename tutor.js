@@ -186,7 +186,6 @@ function displayAIResponse(textResponse) {
 }
 
 /**
- * THE DEVELOPMENT OF THIS METHOD WAS HEAVILY ASSISTED BY AI (CHATGPT)
  * We realized that the response was in markdown format and had the
  * idea to convert it to HTML elements but were unable to figure it out
  * on our own. We used ChatGPT to help make the method and then added some
