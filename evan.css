@@ -1,0 +1,146 @@
+.navbar {
+    background-color: black !important;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+.navbar-brand {
+    color: lightskyblue !important;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: lightgray !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+body {
+    font-family: 'Open Sans' !important;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color:  #555;
+    line-height: 1.8;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.about-me h2 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans' !important;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 2.0rem;
+    color: #333;
+    border-bottom: 2px solid#333;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact-me {
+    background-color: lightgrey; 
+    color: #555;
+    padding: 15px 20px; 
+    font-size: 0.9rem; 
+    margin-top: 32px !important; 
+}
+
+.contact-me h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-me .btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border: 1px solid #555;
+    color: #555;
+}
+
+.contact-me .btn:hover {
+    background-color: #555;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-me img {
+    max-height: 425px;
+}
+
+.experience img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.technical-skills h3 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans' !important;
+    margin-top: 20px;
+    font-size: 1.75rem;
+    color: #333;
+    border-bottom: 2px solid#333;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+#languages {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans' !important;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#technology {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans' !important;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/*ChatGPT assisted with this portion*/
+.technical-skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.technical-skills ul li {
+    flex: 1 1 calc(33.333% - 10px); /* Take up 1/3 of the row, with some spacing */
+    margin: 5px; /* Add spacing between items */
+    text-align: center; /* Center align text for better visuals */
+}
+
+.technical-skills {
+    display: flex; /* Makes the section a flex container */
+    gap: 20px; /* Adds space between the columns */
+}
+
+.technical-skills .col {
+    flex: 1; /* Ensures both columns take equal width */
+    padding: 10px;
+}
+
+.technical-skills .col:not(:last-child) {
+    border-right: 2px solid #ccc; /* Adds a vertical line to the right of the first column */
+}

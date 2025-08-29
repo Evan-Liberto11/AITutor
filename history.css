@@ -1,0 +1,139 @@
+.navbar {
+    background-color: black;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+.navbar-brand {
+    color: lightskyblue !important;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: lightgray !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+#filter-info-line {
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: 'Open Sans' !important;
+    background-color: #0a0f1f;
+    color: #f8f9fa;
+    background-image: url('photos/techyblue.webp');
+    background-size: cover;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+}
+  
+#filter {
+    background: linear-gradient(145deg, #10204b, #17356b);
+    border-radius: 12px;
+    padding: 20px;
+    color: #f8f9fa;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#filter h3 {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#filter label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #f8f9fa;
+}
+
+.form-check-input {
+    border: 1px solid #2c4b79;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #1a2849;
+    color: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+.btn {
+    color: #0a0f1f;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#daily-token-info, #filter-token-info {
+    background: #10204b;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    color: #f8f9fa;
+}
+
+#daily-token-info h3, #filter-token-info h3 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#present-token-info, #filter-token-info {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/*ChatGPT hlelped with this*/
+#history {
+    background: linear-gradient(145deg, #10204b, #17356b);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    color: #f8f9fa;
+    margin-top: 20px;
+}
+
+#history h3 {
+    font-size: 1.8rem;
+    color: white;
+}
+
+/*-ChatGpt Helped with this*/
+#history-output {
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: #f8f9fa;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    max-height: 800px;
+    overflow-y: scroll;
+}
+
+.bottom-part {
+    color: lightgrey;
+}

@@ -1,0 +1,115 @@
+body {
+    background-color: black !important;
+    color: white !important;
+    font-family: 'Open Sans' !important;
+}
+
+.hero {
+    background: url('photos/Landing_BackGround_Image.avif');
+    background-size: cover;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+}
+
+.navbar {
+    background-color: black;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+.navbar-brand {
+    color: lightskyblue !important;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: lightgray !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.how-it-works {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    color: #333; 
+}
+
+.how-it-works h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.how-it-works p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.how-it-works img { 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-primary {
+    background-color: white !important; 
+    color: black !important;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: lightgrey !important;
+}
+
+.about-us {
+    background-color: lightgrey; 
+    color: #555;
+    padding: 15px 20px; 
+    font-size: 0.9rem; 
+    margin-top: 32px !important; 
+}
+
+.about-us h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.about-us p {
+    text-indent: 0px;
+}
+
+.about-us .btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border: 1px solid #555;
+    color: #555;
+}
+
+.about-us .btn:hover {
+    background-color: #555;
+    color: white;
+}

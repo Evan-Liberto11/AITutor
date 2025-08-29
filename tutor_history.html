@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSE 383 Final - Ai Tutor History</title>
+    <!-- Link to external CSS files -->
+    <link rel="stylesheet" href="history.css">
+    <!-- Links to Boostrap CSS, JQuery, Boostrap JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Link to external JS files -->
+    <script src="history.js?rev=1"></script>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm">
+            <a class="navbar-brand" href="landing.html">AI Tutor</a>
+            <!--Button for when the screen shrinks to mobile size-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-Nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="landing.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evan.html">Evan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="demi.html">Demi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutor.html">Tutor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tutor History</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="filter">
+                    <h3>Filter Settings</h3>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" class="form-control mb-2">
+                    
+                    <label for="numRec">Number of Records to Show:</label>
+                    <input type="number" id="numRec" name="numRec" class="form-control mb-2">
+
+                    <label>Sort By Cost:</label><br>
+                    <div class="form-check" id="checkBox">
+                        <input type="radio" id="ascending" name="sortOrder" value="ascending" class="form-check-input">
+                        <label for="ascending" class="form-check-label">Ascending</label><br>
+                        <input type="radio" id="descending" name="sortOrder" value="descending" class="form-check-input">
+                        <label for="descending" class="form-check-label">Descending</label>
+                    </div>
+
+                    <button id="filterInfo" class="btn btn-primary mt-3 w-100">Filter</button>
+                    <button id="clearAll" class="btn btn-primary mt-3 w-100">Clear All</button>
+                </div>
+
+                <div id="filter-info-line"></div>
+
+                <div id="daily-token-info">
+                    <h3 id="tokens">Present Day Token Info</h3>
+                    <div id="present-token-info">
+
+                    </div>
+                    <h3 id="tokens">Filtered Token Info</h3>
+                        <div id="filter-token-info">
+    
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="history">
+                    <h3>Tutor History</h3>
+                    <div id="history-output">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal for View Details Popup -->
+    <div class="modal fade" id="detailsModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="details-Modal-Title">Request Details</h5>
+                </div>
+                <div class="modal-body">
+                    <h6><strong>Request Date/Time(EST): </strong><span id="modalDate"></span></h6>
+                    <h6><strong>User Input: </strong><span id="modalUserInput"></span></h6>
+                    <h6><strong>Computer Created Prompt: </strong><span id=modalSystemPrompt></span></h6>
+                    <h6><strong>Response from AI: </strong><span id=modalAiResponse></span></h6>
+                    <h6><strong>Total Cost: $</strong><span id="modalTotalCost"></span></h6>
+                    <h6><strong>Total Input Tokens: </strong><span id="modalPromptToken"></span></h6>
+                    <h6><strong>Total Output Tokens: </strong><span id="modalOutputToken"></span></h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn close-button" data-bs-dismiss="modal">Close Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--ChatGPT helped with this bottom part-->
+    <div class="container my-5">
+        <div class="d-flex flex-column align-items-center bottom-part">
+            <img src="https://engineering.fb.com/wp-content/uploads/2016/12/grid-AI.jpg" alt="Exploring AI" class="img-fluid rounded shadow mb-3" style="width: 66%;">
+            <h2 class="mt-3">Review your Past Questions</h2>
+            <p class="text-center">Explore your past questions and additional details linked to each one</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
